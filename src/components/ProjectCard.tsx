@@ -2,6 +2,7 @@ import React from "react";
 import  Link  from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Tag } from "./Tag";
+import Image from "next/image";
 
 interface ProjectCardProps {
   id: string;
@@ -27,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="project-card group animate-scale-in border border-border shadow-sm">
       <div className="relative aspect-video overflow-hidden">
-        <img
+        <Image
           src={image}
           alt={title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
