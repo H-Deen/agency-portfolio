@@ -34,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute top-3 left-3">
-          <Tag className="font-medium">
+          <Tag>
             {category}
           </Tag>
         </div>
@@ -61,12 +61,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         
         <div className="mt-4 flex flex-wrap gap-2">
           {technologies.slice(0, 3).map((tech) => (
-            <Tag key={tech} className="bg-secondary/50 font-normal">
+            <Tag key={tech}>
               {tech}
             </Tag>
           ))}
           {technologies.length > 3 && (
-            <Tag className="bg-secondary/50 font-normal">
+            <Tag>
               +{technologies.length - 3}
             </Tag>
           )}
