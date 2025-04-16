@@ -155,7 +155,7 @@ export default function Home() {
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="heading-lg">Ready to start your project?</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Let's collaborate to bring your vision to life with cutting-edge technology and exceptional design.
+                Let&#39;s collaborate to bring your vision to life with cutting-edge technology and exceptional design.
               </p>
               <div className="mt-8">
                 <Link href="/contact" className="button-primary">

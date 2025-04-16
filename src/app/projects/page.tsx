@@ -57,7 +57,7 @@ const Projects = () => {
                         <div className="text-center py-16">
                             <h3 className="heading-md">No projects found</h3>
                             <p className="mt-2 text-muted-foreground">
-                                No projects in the "{selectedCategory}" category at the moment.
+                                No projects in the &#34;{selectedCategory}&#34; category at the moment.
                             </p>
                             <button
                                 onClick={() => setSelectedCategory("All")}
