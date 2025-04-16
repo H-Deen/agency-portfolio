@@ -24,7 +24,7 @@ const Navigation = () => {
       <div className="container-custom py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <span className="font-bold text-xl md:text-2xl text-slate-50">DevStudio</span>
+            <span className="font-bold text-xl md:text-2xl text-slate-900">DevStudio</span>
             <span className="bg-primary text-white text-xs px-1.5 py-0.5 rounded-md">Agency</span>
           </Link>
           
@@ -45,7 +45,7 @@ const Navigation = () => {
                   key={link.path}
                   href={link.path}
                   className={`font-medium transition-colors ${isActive(link.path) 
-                    ? "text-white" 
+                    ? "text-blue-600" 
                     : "text-gray-900"}`}
                 >
                   {link.name}
