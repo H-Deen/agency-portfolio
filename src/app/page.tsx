@@ -1,5 +1,7 @@
 import { ArrowRight, Code, Figma, Server } from "lucide-react";
 import Link from "next/link";
+import { ProjectsData } from "@/data/Projects";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
   return (
@@ -139,9 +141,9 @@ export default function Home() {
           </div>
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* {mockProjects.slice(0, 3).map((project) => (
+            {ProjectsData.slice(0, 3).map((project) => (
               <ProjectCard key={project.id} {...project} />
-            ))} */}
+            ))}
           </div>
         </div>
       </section>
