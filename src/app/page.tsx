@@ -24,7 +24,7 @@ export default function Home() {
                   Get in Touch
                   <ArrowRight size={16} />
                 </Link>
-                <Link href="/projects" className="button-outline">
+                <Link href="/projects" className="button-outline border-slate-900">
                   View Our Work
                 </Link>
               </div>
@@ -134,7 +134,7 @@ export default function Home() {
                 Explore our recent work and success stories
               </p>
             </div>
-            <Link href="/projects" className="button-outline">
+            <Link href="/projects" className="button-outline border-slate-900">
               View All Projects
               <ArrowRight size={16} />
             </Link>
