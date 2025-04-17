@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from "react";
 import { Send, Mail, MapPin, Phone } from "lucide-react";
 import  Input  from "@/components/input";
