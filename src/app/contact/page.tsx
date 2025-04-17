@@ -45,7 +45,7 @@ const Contact = () => {
                     <div className="max-w-3xl">
                         <h1 className="heading-lg">Get in Touch</h1>
                         <p className="mt-4 text-lg text-muted-foreground">
-                            Have a project in mind? Let's talk about how we can help bring your ideas to life.
+                            Have a project in mind? Let&#39;s talk about how we can help bring your ideas to life.
                         </p>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ const Contact = () => {
                         <div className="lg:col-span-2">
                             <h2 className="heading-sm">Send Us a Message</h2>
                             <p className="mt-2 text-muted-foreground">
-                                Fill out the form below and we'll get back to you as soon as possible.
+                                Fill out the form below and we&#39;ll get back to you as soon as possible.
                             </p>
 
                             <form onSubmit={handleSubmit} className="mt-6 space-y-5">
