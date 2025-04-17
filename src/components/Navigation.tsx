@@ -1,12 +1,14 @@
 'use client'
 
 import React, { useState } from "react";
-import  Link  from "next/link";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+  const pathname = usePathname();
+
   const links = [
     { name: "Home", path: "/" },
     { name: "Projects", path: "/projects" },
@@ -15,9 +17,7 @@ const Navigation = () => {
     { name: "Contact", path: "/contact" }
   ];
 
-  const isActive = (path: string) => {
-    return location.pathname === path;
-  };
+  const isActive = (path: string) => pathname === path;
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
@@ -29,8 +29,6 @@ const Navigation = () => {
           </Link>
           
           <div className="flex items-center gap-2">
-            {/* <ThemeToggle /> */}
-            
             <button
               className="p-2 rounded-md md:hidden"
               onClick={() => setIsOpen(!isOpen)}
