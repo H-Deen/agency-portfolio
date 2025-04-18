@@ -1,11 +1,26 @@
 import React from "react";
 
-interface TagProps {
-  children: React.ReactNode;
+interface TagProps extends React.HTMLAttributes<HTMLDivElement> {
+  variant?: "default" | "secondary" | "destructive" | "outline";
 }
 
-export const Tag : React.FC<TagProps> = ({children}) => {
+const Tag: React.FC<TagProps> = ({ className = "", variant = "default", ...props }) => {
+  const baseStyles =
+    "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2";
+
+  const variants = {
+    default: "bg-primary text-white border-transparent hover:bg-primary/80",
+    secondary: "bg-secondary text-white border-transparent hover:bg-secondary/80",
+    destructive: "bg-red-600 text-white border-transparent hover:bg-red-700",
+    outline: "text-black border border-gray-300",
+  };
+
   return (
-    <div className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">{children}</div>
-  )
-}
+    <div
+      className={`${baseStyles} ${variants[variant]} ${className}`}
+      {...props}
+    />
+  );
+};
+
+export default Tag;
