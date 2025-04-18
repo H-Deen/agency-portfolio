@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import TeamMemberCard from "@/components/TeamMemberCard";
 import { mockTeamMembers } from "@/data/TeamMembers";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -13,7 +14,7 @@ const About = () => {
           <div className="max-w-3xl">
             <h1 className="heading-lg">About Us</h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              We're a team of passionate developers, designers, and strategists building
+              We&#39;re a team of passionate developers, designers, and strategists building
               exceptional digital products that solve real-world problems.
             </p>
           </div>
@@ -39,7 +40,7 @@ const About = () => {
               </p>
             </div>
             <div className="bg-card rounded-lg border border-border overflow-hidden">
-              <img 
+              <Image 
                 src="whttps://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" 
                 alt="Our team collaborating"
                 className="w-full h-full object-cover"
@@ -124,8 +125,8 @@ const About = () => {
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="heading-md">Want to work with us?</h2>
               <p className="mt-4 text-muted-foreground">
-                We're always looking for new challenges and exciting projects.
-                Let's create something amazing together!
+                We&#39;re always looking for new challenges and exciting projects.
+                Let&#39;s create something amazing together!
               </p>
               <div className="mt-8">
                 <Link href="/contact" className="button-primary">

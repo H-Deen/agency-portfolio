@@ -2,6 +2,7 @@ import React from "react";
 import  Link  from "next/link";
 import { Calendar, Clock } from "lucide-react";
 import  Tag  from "@/components/Tag";
+import Image from "next/image";
 
 interface BlogCardProps {
   id: string;
@@ -32,7 +33,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
     <article className="project-card group animate-scale-in border border-border shadow-sm">
       <Link href={`/blog/${id}`} className="block hover:opacity-90 transition-opacity">
         <div className="relative aspect-video overflow-hidden">
-          <img
+          <Image
             src={image}
             alt={title}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

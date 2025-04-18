@@ -5,6 +5,7 @@ import { ArrowLeft, Globe, Calendar, User } from "lucide-react";
 import  Tag  from "@/components/Tag";
 import  { ProjectsData }  from "@/data/Projects";
 import { useParams } from "next/navigation";
+import Image from "next/image";
 
 const ProjectDetail = () => {
   const projectId = useParams().projectId as string;
@@ -15,7 +16,7 @@ const ProjectDetail = () => {
         <div className="container-custom py-24 text-center">
           <h1 className="heading-lg">Project Not Found</h1>
           <p className="mt-4 text-muted-foreground">
-            The project you're looking for doesn't exist or has been removed.
+            The project you&#39;re looking for doesn&#39;t exist or has been removed.
           </p>
           <Link href="/projects" className="button-primary mt-8">
             <ArrowLeft size={16} />
@@ -71,7 +72,7 @@ const ProjectDetail = () => {
       </section><section className="py-12">
         <div className="container-custom">
           <div className="rounded-xl overflow-hidden border border-border">
-            <img
+            <Image
               src={project.image}
               alt={project.title}
               className="w-full h-auto" />
@@ -107,11 +108,11 @@ const ProjectDetail = () => {
               </div>
 
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80"
                   alt="Project screenshot"
                   className="rounded-lg border border-border" />
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80"
                   alt="Project screenshot"
                   className="rounded-lg border border-border" />
@@ -193,7 +194,7 @@ const ProjectDetail = () => {
           <div className="text-center">
             <h2 className="heading-md">Interested in working together?</h2>
             <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-              Let's discuss how we can help bring your next project to life with our
+              Let&#39;s discuss how we can help bring your next project to life with our
               expertise in design and development.
             </p>
             <Link href="/contact" className="button-primary mt-8">

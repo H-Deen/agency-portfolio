@@ -5,6 +5,7 @@ import { ArrowLeft, Calendar, Clock, Tag, ChevronLeft, ChevronRight } from "luci
 import Badge from "@/components/Tag";
 import { mockBlogPosts } from "@/data/Blogs";
 import { useParams } from "next/navigation";
+import Image from "next/image";
 
 const BlogPost = () => {
   const blogId = useParams().blogId as string
@@ -15,7 +16,7 @@ const BlogPost = () => {
         <div className="container-custom py-24 text-center">
           <h1 className="heading-lg">Blog Post Not Found</h1>
           <p className="mt-4 text-muted-foreground">
-            The article you're looking for doesn't exist or has been removed.
+            The article you&#39;re looking for doesn&#39;t exist or has been removed.
           </p>
           <Link href="/blog" className="button-primary mt-8">
             <ArrowLeft size={16} />
@@ -76,7 +77,7 @@ const BlogPost = () => {
         
         <div className="container-custom py-12 max-w-4xl">
           <div className="rounded-xl overflow-hidden border border-border mb-10">
-            <img 
+            <Image 
               src={post.image} 
               alt={post.title}
               className="w-full h-auto"
@@ -109,7 +110,7 @@ const BlogPost = () => {
             
             <blockquote>
               <p>
-                "The best way to predict the future is to implement it."
+              &#34;The best way to predict the future is to implement it.&#34;
               </p>
             </blockquote>
             

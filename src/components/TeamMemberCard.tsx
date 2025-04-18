@@ -1,5 +1,6 @@
 import React from "react";
 import { Github, Twitter, Linkedin } from "lucide-react";
+import Image from "next/image";
 
 interface TeamMemberCardProps {
   name: string;
@@ -23,7 +24,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
   return (
     <div className="bg-card rounded-xl border border-border overflow-hidden transition-all duration-300 hover:shadow-lg animate-scale-in">
       <div className="aspect-square overflow-hidden">
-        <img
+        <Image
           src={image}
           alt={name}
           className="w-full h-full object-cover"
