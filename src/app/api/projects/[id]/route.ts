@@ -3,9 +3,9 @@ import { getProjectById } from '@/app/services/projects';
 
 export async function GET(
   _request: Request,
-  context: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
-  const { id } = await context.params;
+  const id = (await params).id;
   const project = await getProjectById(id);
 
   if (!project) {
