@@ -3,7 +3,7 @@ import { getBlogById } from '@/app/services/blogs';
 
 export async function GET(
   _request: Request,
-  context: Promise<{ params: { id: string } }>
+  context: { params: { id: string } }
 ) {
   const { params } = await context;
   const { id } = await params;
