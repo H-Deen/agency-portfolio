@@ -21,6 +21,7 @@ const ProjectDetail = () => {
         const data = await res.json();
         setProject(data);
       } catch (error) {
+        console.error("Error fetching project:", error);
         setProject(null);
       } finally {
         setLoading(false);
