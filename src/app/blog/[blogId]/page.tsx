@@ -47,7 +47,7 @@ const BlogPost = () => {
       <div className="container-custom py-24 text-center">
         <h1 className="heading-lg">Blog Post Not Found</h1>
         <p className="mt-4 text-muted-foreground">
-          The article you're looking for doesn't exist or has been removed.
+          The article you&#39;re looking for doesn&#39;t exist or has been removed.
         </p>
         <Link href="/blog" className="button-primary mt-8">
           <ArrowLeft size={16} />
