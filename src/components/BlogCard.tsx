@@ -36,6 +36,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
           <Image
             src={image}
             alt={title}
+            fill
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>

@@ -1,0 +1,11 @@
+{
+  "id": "project-7",
+  "title": "Educational Platform UI Design",
+  "client": "LearnWave",
+  "year": 2023,
+  "description": "A complete user interface design for an online learning platform, focused on accessibility and engaging user experience.",
+  "image": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80",
+  "technologies": ["Figma", "Adobe XD", "Illustrator", "Photoshop"],
+  "category": "UI/UX Design",
+  "website": null
+}

@@ -1,0 +1,11 @@
+{
+  "id": "project-4",
+  "title": "Restaurant Booking System",
+  "client": "Gourmet Group",
+  "year": 2023,
+  "description": "An online reservation system for a chain of restaurants, including table management and customer relationship features.",
+  "image": "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80",
+  "technologies": ["Vue.js", "Laravel", "MySQL", "Twilio API"],
+  "category": "Web Development",
+  "website": null
+}

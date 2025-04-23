@@ -23,10 +23,11 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
 }) => {
   return (
     <div className="bg-card rounded-xl border border-border overflow-hidden transition-all duration-300 hover:shadow-lg animate-scale-in">
-      <div className="aspect-square overflow-hidden">
+      <div className="aspect-square overflow-hidden relative">
         <Image
           src={image}
           alt={name}
+          fill
           className="w-full h-full object-cover"
         />
       </div>

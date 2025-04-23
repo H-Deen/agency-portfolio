@@ -1,9 +1,12 @@
 import { ArrowRight, Code, Figma, Server } from "lucide-react";
 import Link from "next/link";
-import { ProjectsData } from "@/data/Projects";
 import ProjectCard from "@/components/ProjectCard";
+import { getAllProjects } from '@/app/services/projects'
 
-export default function Home() {
+export default async function Home() {
+  const projects = await getAllProjects()
+  console.log('projects', projects)
+  
   return (
     <div>
       <div className="bg-[url('/coolbackgrounds-unsplash-zeller.jpg')] bg-cover bg-no-repeat bg-center min-h-screen w-full z-50">
@@ -141,7 +144,7 @@ export default function Home() {
           </div>
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {ProjectsData.slice(0, 3).map((project) => (
+            {projects.slice(0, 3).map((project) => (
               <ProjectCard key={project.id} {...project} />
             ))}
           </div>

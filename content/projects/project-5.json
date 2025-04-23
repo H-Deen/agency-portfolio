@@ -1,0 +1,11 @@
+{
+  "id": "project-5",
+  "title": "Property Management Platform",
+  "client": "HomeSpace Realty",
+  "year": 2022,
+  "description": "A comprehensive platform for property managers to handle listings, tenant applications, maintenance requests, and payments.",
+  "image": "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80",
+  "technologies": ["React", "Node.js", "PostgreSQL", "AWS", "Stripe"],
+  "category": "Web Development",
+  "website": "https://example.com"
+}

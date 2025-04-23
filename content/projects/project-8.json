@@ -1,0 +1,11 @@
+{
+  "id": "project-8",
+  "title": "Sustainable Fashion E-Commerce",
+  "client": "EcoChic",
+  "year": 2022,
+  "description": "An e-commerce platform for sustainable fashion brands, highlighting eco-friendly practices and ethical sourcing.",
+  "image": "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80",
+  "technologies": ["Shopify", "Liquid", "JavaScript", "SCSS", "Klaviyo"],
+  "category": "E-commerce",
+  "website": "https://example.com"
+}

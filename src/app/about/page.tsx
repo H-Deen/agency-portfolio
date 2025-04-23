@@ -39,10 +39,11 @@ const About = () => {
                 expectations.
               </p>
             </div>
-            <div className="bg-card rounded-lg border border-border overflow-hidden">
+            <div className="bg-card rounded-lg border border-border overflow-hidden relative aspect-video">
               <Image 
                 src="whttps://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" 
                 alt="Our team collaborating"
+                fill
                 className="w-full h-full object-cover"
               />
             </div>
