@@ -64,7 +64,7 @@ const ProjectDetail = () => {
             Back to Projects
           </Link>
 
-          <Tag variant="secondary" className="mb-4">
+          <Tag variant="default" className="mb-4">
             {project.category}
           </Tag>
 
