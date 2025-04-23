@@ -45,7 +45,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
       <div className="p-5">
         <div className="flex flex-wrap gap-2 mb-3">
           {tags.slice(0, 2).map((tag) => (
-            <Tag key={tag} variant="secondary" className="font-normal">
+            <Tag key={tag} variant="default" className="font-normal">
               {tag}
             </Tag>
           ))}

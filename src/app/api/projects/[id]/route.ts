@@ -2,10 +2,10 @@ import { NextResponse } from 'next/server';
 import { getProjectById } from '@/app/services/projects';
 
 export async function GET(
-  request: Request,
-  context: { params: { id: string } }
+  _request: Request,
+  { params }: { params: { id: string } }
 ) {
-  const {id} =  await context.params
+  const {id} =  await params
   const project = await getProjectById(id);
 
   if (!project) {
