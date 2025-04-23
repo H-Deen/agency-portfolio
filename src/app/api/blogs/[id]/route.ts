@@ -3,9 +3,10 @@ import { getBlogById } from '@/app/services/blogs';
 
 export async function GET(
   _request: Request,
-  { params }: { params: { id: string } }
+  context: Promise<{ params: { id: string } }>
 ) {
-  const {id} = await params
+  const { params } = await context;
+  const { id } = await params;
   const project = await getBlogById(id);
 
   if (!project) {
