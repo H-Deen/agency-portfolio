@@ -5,8 +5,7 @@ export async function GET(
   _request: Request,
   context: { params: { id: string } }
 ) {
-  const { params } = await context;
-  const { id } = await params;
+  const { id } = await context.params;
   const project = await getProjectById(id);
 
   if (!project) {
