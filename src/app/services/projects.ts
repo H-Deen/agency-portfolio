@@ -2,7 +2,7 @@ import { promises as fs } from 'fs'
 import path from 'path'
 
 export interface Projects {
-  id: string,
+    id: string,
     title: string,
     client: string,
     year: number,
