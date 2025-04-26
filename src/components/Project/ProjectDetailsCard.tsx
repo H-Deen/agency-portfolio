@@ -1,5 +1,5 @@
 import { Globe } from "lucide-react"
-import Tag from "./Tag"
+import Tag from "@/components/Ui/Tag"
 import { Projects } from "@/app/services/projects"
 
 export interface project{

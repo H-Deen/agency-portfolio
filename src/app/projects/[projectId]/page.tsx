@@ -5,9 +5,9 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { Projects } from "@/app/services/projects";
-import ProjectDetailsHead from "@/components/ProjectDetailsHead";
-import ProjectDetailsBody from "@/components/ProjectDetailsBody";
-import Cta from "@/components/Cta";
+import ProjectDetailsHead from "@/components/Project/ProjectDetailsHead";
+import ProjectDetailsBody from "@/components/Project/ProjectDetailsBody";
+import Cta from "@/components/Ui/Cta";
 
 const ProjectDetail = () => {
   const { projectId } = useParams();

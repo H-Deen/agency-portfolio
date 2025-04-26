@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import ProjectCard from "../../components/ProjectCard";
+import ProjectCard from "@/components/Project/ProjectCard";
 import type { Projects } from "@/app/services/projects"; 
 
 type Category = "All" | "Web Development" | "Mobile App" | "UI/UX Design" | "E-commerce";

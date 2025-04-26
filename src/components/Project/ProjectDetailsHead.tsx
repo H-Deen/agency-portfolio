@@ -1,6 +1,6 @@
 import { ArrowLeft, Calendar, Globe, User } from "lucide-react"
 import Link from "next/link"
-import Tag from "./Tag"
+import Tag from "@/components/Ui/Tag"
 import { project } from "./ProjectDetailsCard"
 
 

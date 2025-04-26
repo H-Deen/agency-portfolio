@@ -1,7 +1,7 @@
 'use client'
 
-import ContactFrom from "@/components/ContactFrom";
-import ContactInfo from "@/components/ContactInfo";
+import ContactFrom from "@/components/Contact/ContactFrom";
+import ContactInfo from "@/components/Contact/ContactInfo";
 
 const Contact = () => {
 

@@ -1,9 +1,9 @@
 import React from "react";
-import TeamMemberCard from "@/components/TeamMemberCard";
+import TeamMemberCard from "@/components/About/TeamMemberCard";
 import { mockTeamMembers } from "@/data/TeamMembers";
 import Image from "next/image";
-import Cta from "@/components/Cta";
-import ValueCard from "@/components/ValueCard";
+import Cta from "@/components/Ui/Cta";
+import ValueCard from "@/components/About/ValueCard";
 
 const About = () => {
   return (

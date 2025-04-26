@@ -2,13 +2,13 @@
 
 import Link from 'next/link';
 import { ArrowLeft, Calendar, Clock, Tag } from 'lucide-react';
-import Badge from '@/components/Tag';
+import Badge from '@/components/Ui/Tag';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
 import type { SerializedBlog } from '@/app/services/blogs';
-import AdjacentBlog from '@/components/AdjacentBlog';
+import AdjacentBlog from '@/components/Blog/AdjacentBlog';
 
 const BlogPost = () => {
   const { blogId } = useParams();

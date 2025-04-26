@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Input from "./Input";
-import Textarea from "./Textarea";
+import Input from "../Ui/Input";
+import Textarea from "../Ui/Textarea";
 import { Send } from "lucide-react";
-import Button from "./Button";
+import Button from "../Ui/Button";
 
 const ContactFrom = () => {
     const [formData, setFormData] = useState({
@@ -34,7 +34,7 @@ const ContactFrom = () => {
             setIsSubmitting(false);
         }, 1500);
     };
-    
+
     return (
         <div className="lg:col-span-2">
             <h2 className="heading-sm">Send Us a Message</h2>
@@ -44,45 +44,36 @@ const ContactFrom = () => {
 
             <form onSubmit={handleSubmit} className="mt-6 space-y-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <div>
-                        <label htmlFor="name" className="block mb-2 font-medium">
-                            Your Name
-                        </label>
-                        <Input
-                            id="name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                            placeholder="John Doe" />
-                    </div>
-                    <div>
-                        <label htmlFor="email" className="block mb-2 font-medium">
-                            Email Address
-                        </label>
-                        <Input
-                            id="email"
-                            name="email"
-                            type="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                            placeholder="john@example.com" />
-                    </div>
-                </div>
-
-                <div>
-                    <label htmlFor="subject" className="block mb-2 font-medium">
-                        Subject
-                    </label>
                     <Input
-                        id="subject"
-                        name="subject"
-                        value={formData.subject}
+                        id="name"
+                        name="name"
+                        label="Your Name"
+                        value={formData.name}
                         onChange={handleChange}
                         required
-                        placeholder="Project Inquiry" />
+                        placeholder="John Doe"
+                    />
+                    <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        label="Email Address"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        placeholder="john@example.com"
+                    />
                 </div>
+
+                <Input
+                    id="subject"
+                    name="subject"
+                    label="Subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
+                    placeholder="Project Inquiry"
+                />
 
                 <div>
                     <label htmlFor="message" className="block mb-2 font-medium">
@@ -95,7 +86,8 @@ const ContactFrom = () => {
                         onChange={handleChange}
                         required
                         placeholder="Tell us about your project..."
-                        rows={6} />
+                        rows={6}
+                    />
                 </div>
 
                 <Button

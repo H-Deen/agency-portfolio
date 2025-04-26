@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState } from 'react';
 import { Search } from 'lucide-react';
-import BlogCard from '@/components/BlogCard';
-import Input from '@/components/Input';
-import Tag from '@/components/Tag';
+import BlogCard from '@/components/Blog/BlogCard';
+import Input from '@/components/Ui/Input';
+import Tag from '@/components/Ui/Tag';
 import type { Blog } from '@/app/services/blogs';
 
 const Blog = () => {
