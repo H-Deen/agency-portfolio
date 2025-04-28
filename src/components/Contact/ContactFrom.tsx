@@ -51,12 +51,11 @@ const ContactForm = () => {
         />
 
         <div>
-          <label htmlFor="message" className="block mb-2 font-medium">
-            Message
-          </label>
+            
           <Textarea
             id="message"
             name="message"
+            label='Message'
             required
             placeholder="Tell us about your project..."
             rows={6}
